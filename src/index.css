@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* iOS Safari viewport fix — use dvh everywhere, never raw 100vh */
+html {
+  height: -webkit-fill-available; /* iOS Safari 14 and earlier fallback */
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh; /* overrides line above in supporting browsers */
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
