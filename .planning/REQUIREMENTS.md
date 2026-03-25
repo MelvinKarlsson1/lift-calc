@@ -9,8 +9,8 @@
 
 - [x] **EXER-01**: User sees a preloaded list of ~50 common weightlifting exercises on first launch
 - [x] **EXER-02**: User can remove default exercises they don't use
-- [ ] **EXER-03**: User can add custom exercises with a name
-- [ ] **EXER-04**: User can record their 1RM (max weight in kg) for any exercise
+- [x] **EXER-03**: User can add custom exercises with a name
+- [x] **EXER-04**: User can record their 1RM (max weight in kg) for any exercise
 
 ### Calculator
 
@@ -69,8 +69,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UX-02 | Phase 1 | Complete |
 | EXER-01 | Phase 2 | Complete |
 | EXER-02 | Phase 2 | Complete |
-| EXER-03 | Phase 2 | Pending |
-| EXER-04 | Phase 2 | Pending |
+| EXER-03 | Phase 2 | Complete |
+| EXER-04 | Phase 2 | Complete |
 | CALC-01 | Phase 3 | Pending |
 | CALC-02 | Phase 3 | Pending |
 | CALC-03 | Phase 3 | Pending |

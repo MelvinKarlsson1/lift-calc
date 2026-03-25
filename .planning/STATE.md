@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to execute
-stopped_at: Completed 02-exercise-management-02-01-PLAN.md
-last_updated: "2026-03-25T13:34:00.583Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 02-exercise-management-02-02-PLAN.md
+last_updated: "2026-03-25T13:38:38.275Z"
 progress:
   total_phases: 3
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
 ---
 
 # Project State
@@ -49,6 +49,7 @@ Plan: 2 of 2
 | Phase 01-foundation P01 | 4 | 1 tasks | 17 files |
 | Phase 01-foundation P02 | 5 | 2 tasks | 3 files |
 | Phase 02-exercise-management P01 | 149 | 2 tasks | 3 files |
+| Phase 02-exercise-management P02 | 109 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -67,6 +68,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: AppStore exported from types.ts alongside AppState — type contract in one file, store.ts imports it
 - [Phase 01-foundation]: Named constant CURRENT_SCHEMA_VERSION in initial state — auditable, grep-friendly over magic literal
 - [Phase 02-exercise-management]: Seed guard placed in persist merge callback so it fires exactly once at hydration; 44 exercises chosen over padding to hit ~50
+- [Phase 02-exercise-management]: type=text inputMode=decimal for 1RM input — avoids browser spinners that break gym-use mobile UX
+- [Phase 02-exercise-management]: onBlur store write (not onChange) with parseFloat guard — prevents noisy writes on every keystroke
+- [Phase 02-exercise-management]: ExerciseList owns h-[100dvh] layout — App.tsx wrapper div removed; component is self-contained
 
 ### Pending Todos
 
@@ -80,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-25T13:34:00.579Z
-Stopped at: Completed 02-exercise-management-02-01-PLAN.md
+Last session: 2026-03-25T13:38:38.272Z
+Stopped at: Completed 02-exercise-management-02-02-PLAN.md
 Resume file: None

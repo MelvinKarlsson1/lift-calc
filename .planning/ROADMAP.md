@@ -13,7 +13,7 @@ Three phases that build from the ground up: a safe storage layer first (so data 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Scaffold, storage layer, and iOS layout fixes (completed 2026-03-25)
-- [ ] **Phase 2: Exercise Management** - Exercise list, 1RM entry, and custom exercises
+- [x] **Phase 2: Exercise Management** - Exercise list, 1RM entry, and custom exercises (completed 2026-03-25)
 - [ ] **Phase 3: Calculator** - Working weight calculation and thumb-zone session view
 
 ## Phase Details
@@ -46,7 +46,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 02-01-PLAN.md — Store additions: removeExercise action, seedExercises.ts, seed-on-first-launch in persist merge
-- [ ] 02-02-PLAN.md — ExerciseList component with ExerciseRow, add/remove/1RM UI, wire into App.tsx
+- [x] 02-02-PLAN.md — ExerciseList component with ExerciseRow, add/remove/1RM UI, wire into App.tsx
 **UI hint**: yes
 
 ### Phase 3: Calculator
@@ -69,5 +69,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete   | 2026-03-25 |
-| 2. Exercise Management | 1/2 | In Progress|  |
+| 2. Exercise Management | 2/2 | Complete   | 2026-03-25 |
 | 3. Calculator | 0/? | Not started | - |
