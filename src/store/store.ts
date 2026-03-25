@@ -6,6 +6,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { AppState, AppStore } from './types'
+import { SEED_EXERCISES } from '../data/seedExercises'
 
 const CURRENT_SCHEMA_VERSION = 1
 
@@ -33,12 +34,22 @@ export const useAppStore = create<AppStore>()(
         set((state) => ({
           exercises: [...state.exercises, exercise],
         })),
+      removeExercise: (id) =>
+        set((state) => ({
+          exercises: state.exercises.filter((ex) => ex.id !== id),
+        })),
     }),
     {
       name: 'lift-calc-v1',
       merge: (persisted, current) => {
         const migratedState = migrateIfNeeded(persisted as AppState)
-        return { ...current, ...migratedState }
+        const merged = { ...current, ...migratedState }
+        // Seed on first launch only — runs once when exercises is empty at hydration.
+        // Does NOT run again when exercises becomes empty at runtime (intentional user action).
+        if (!merged.exercises || merged.exercises.length === 0) {
+          merged.exercises = SEED_EXERCISES
+        }
+        return merged
       },
       onRehydrateStorage: () => (_state, error) => {
         if (error) {
