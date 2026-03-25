@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { isStorageAvailable } from './lib/storage'
+import { ExerciseList } from './components/ExerciseList'
 
 function StorageWarning() {
   return (
@@ -22,11 +23,5 @@ export default function App() {
     return <StorageWarning />
   }
 
-  return (
-    <div className="min-h-[100dvh] flex flex-col bg-gray-950 text-white">
-      <main className="flex-1 p-4">
-        <p className="text-gray-500 text-sm">Lift Calc — foundation ready.</p>
-      </main>
-    </div>
-  )
+  return <ExerciseList />
 }
