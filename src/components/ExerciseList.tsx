@@ -83,7 +83,8 @@ export function ExerciseList({ onSelectExercise }: ExerciseListProps) {
   function handleAdd() {
     const name = newName.trim()
     if (!name) return
-    addExercise({ id: crypto.randomUUID(), name, isCustom: true })
+    const id = crypto.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`
+    addExercise({ id, name, isCustom: true })
     setNewName('')
   }
 
