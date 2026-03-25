@@ -19,4 +19,5 @@ export interface AppStore extends AppState {
   // Actions added in Phase 2 and 3.
   setMaxWeight: (exerciseId: string, weight: number) => void
   addExercise: (exercise: Exercise) => void
+  removeExercise: (id: string) => void
 }
