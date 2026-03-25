@@ -1,6 +1,11 @@
+// src/store/store.ts
+// Single Zustand store for all app state.
+// Uses `persist` middleware to write full store to localStorage under key `lift-calc-v1`.
+// Source: https://zustand.docs.pmnd.rs/reference/middlewares/persist
+
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import type { AppState, Exercise } from './types'
+import type { AppState, AppStore } from './types'
 
 const CURRENT_SCHEMA_VERSION = 1
 
@@ -13,15 +18,11 @@ function migrateIfNeeded(stored: AppState): AppState {
   return stored
 }
 
-interface AppStore extends AppState {
-  setMaxWeight: (exerciseId: string, weight: number) => void
-  addExercise: (exercise: Exercise) => void
-}
-
 export const useAppStore = create<AppStore>()(
   persist(
     (set) => ({
-      schemaVersion: 1,
+      // Foundation fields — present from first write, required for migrations.
+      schemaVersion: CURRENT_SCHEMA_VERSION,
       exercises: [],
       maxWeights: {},
       setMaxWeight: (exerciseId, weight) =>
