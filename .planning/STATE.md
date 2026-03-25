@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Completed 02-exercise-management-02-02-PLAN.md
-last_updated: "2026-03-25T13:42:39.050Z"
+status: Executing
+stopped_at: Completed 03-calculator-03-01-PLAN.md
+last_updated: "2026-03-25T14:05:00Z"
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 6
+  completed_plans: 5
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-25)
 
 **Core value:** Instantly see how much weight to load for any exercise at any percentage of your max.
-**Current focus:** Phase 02 — exercise-management
+**Current focus:** Phase 03 — calculator
 
 ## Current Position
 
 Phase: 3
-Plan: Not started
+Plan: 1 of 2 complete
 
 ## Performance Metrics
 
@@ -50,6 +50,7 @@ Plan: Not started
 | Phase 01-foundation P02 | 5 | 2 tasks | 3 files |
 | Phase 02-exercise-management P01 | 149 | 2 tasks | 3 files |
 | Phase 02-exercise-management P02 | 109 | 2 tasks | 2 files |
+| Phase 03-calculator P01 | 4 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -71,6 +72,8 @@ Recent decisions affecting current work:
 - [Phase 02-exercise-management]: type=text inputMode=decimal for 1RM input — avoids browser spinners that break gym-use mobile UX
 - [Phase 02-exercise-management]: onBlur store write (not onChange) with parseFloat guard — prevents noisy writes on every keystroke
 - [Phase 02-exercise-management]: ExerciseList owns h-[100dvh] layout — App.tsx wrapper div removed; component is self-contained
+- [Phase 03-calculator]: vitest installed for TDD — natural fit with Vite stack
+- [Phase 03-calculator]: Pure functions in src/lib/ — no imports, no side effects, fully testable
 
 ### Pending Todos
 
@@ -84,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-25T13:38:38.272Z
-Stopped at: Completed 02-exercise-management-02-02-PLAN.md
+Last session: 2026-03-25T14:05:00Z
+Stopped at: Completed 03-calculator-03-01-PLAN.md
 Resume file: None

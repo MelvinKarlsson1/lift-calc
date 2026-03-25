@@ -16,7 +16,7 @@
 
 - [ ] **CALC-01**: User can select an exercise and enter a percentage to see the calculated working weight
 - [ ] **CALC-02**: User can tap preset percentage buttons (70%, 80%, 85%, 90%, 95%) instead of typing
-- [ ] **CALC-03**: Calculated weights are rounded to the nearest 2.5kg
+- [x] **CALC-03**: Calculated weights are rounded to the nearest 2.5kg
 
 ### Mobile UX
 
@@ -73,7 +73,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EXER-04 | Phase 2 | Complete |
 | CALC-01 | Phase 3 | Pending |
 | CALC-02 | Phase 3 | Pending |
-| CALC-03 | Phase 3 | Pending |
+| CALC-03 | Phase 3 | Complete |
 | UX-01 | Phase 3 | Pending |
 
 **Coverage:**
