@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   5. Storage data shape contains a schemaVersion field (visible in browser dev tools)
 **Plans**: 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Vite + React + TypeScript + Tailwind v4, apply dvh viewport fix
+- [x] 01-01-PLAN.md — Scaffold Vite + React + TypeScript + Tailwind v4, apply dvh viewport fix
 - [ ] 01-02-PLAN.md — Storage layer (storage.ts, types.ts, store.ts) and App shell with storage gate
 **UI hint**: yes
 
@@ -65,6 +65,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
+| 1. Foundation | 1/2 | In Progress|  |
 | 2. Exercise Management | 0/? | Not started | - |
 | 3. Calculator | 0/? | Not started | - |
