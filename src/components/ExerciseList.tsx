@@ -29,10 +29,10 @@ function ExerciseRow({ exercise, weight, onRemove, onWeightChange, onSelect }: E
   }
 
   return (
-    <div className="flex items-center gap-3 bg-gray-900 rounded-lg px-4 py-3 min-h-[56px]">
+    <div className="flex items-center gap-3 bg-gray-100 rounded-lg px-4 py-3 min-h-[56px]">
       <button
         onClick={() => onSelect?.()}
-        className="flex-1 text-left text-white text-base py-1 disabled:cursor-default"
+        className="flex-1 text-left text-gray-900 text-base py-1 disabled:cursor-default"
         aria-label={`Calculate working weight for ${exercise.name}`}
         disabled={!weight}
       >
@@ -50,12 +50,12 @@ function ExerciseRow({ exercise, weight, onRemove, onWeightChange, onSelect }: E
         onBlur={handleBlur}
         placeholder="kg"
         aria-label={`1RM for ${exercise.name}`}
-        className="w-20 text-right bg-gray-800 text-white rounded px-3 py-2 min-h-10"
+        className="w-20 text-right bg-white text-gray-900 border border-gray-300 rounded px-3 py-2 min-h-10"
       />
       <button
         onClick={onRemove}
         aria-label={`Remove ${exercise.name}`}
-        className="text-gray-500 hover:text-red-400 min-h-12 min-w-12 flex items-center justify-center"
+        className="text-gray-400 hover:text-red-500 min-h-12 min-w-12 flex items-center justify-center"
       >
         ×
       </button>
@@ -89,10 +89,10 @@ export function ExerciseList({ onSelectExercise }: ExerciseListProps) {
   }
 
   return (
-    <div className="flex flex-col h-[100dvh] bg-gray-950 text-white">
+    <div className="flex flex-col h-[100dvh] bg-white text-gray-900">
       {/* Header */}
       <div className="px-4 pt-6 pb-3">
-        <h1 className="text-xl font-bold text-white">Exercises</h1>
+        <h1 className="text-xl font-bold text-gray-900">Exercises</h1>
       </div>
 
       {/* Scrollable exercise list */}
@@ -114,14 +114,14 @@ export function ExerciseList({ onSelectExercise }: ExerciseListProps) {
       </div>
 
       {/* Add form — pinned at bottom via flex column order, not fixed position */}
-      <div className="px-4 py-4 border-t border-gray-800 flex gap-2">
+      <div className="px-4 py-4 border-t border-gray-200 flex gap-2">
         <input
           type="text"
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
           onKeyDown={(e) => { if (e.key === 'Enter') handleAdd() }}
           placeholder="Exercise name"
-          className="flex-1 bg-gray-800 text-white rounded px-3 py-3 min-h-12 placeholder:text-gray-500"
+          className="flex-1 bg-white text-gray-900 border border-gray-300 rounded px-3 py-3 min-h-12 placeholder:text-gray-400"
         />
         <button
           onClick={handleAdd}
