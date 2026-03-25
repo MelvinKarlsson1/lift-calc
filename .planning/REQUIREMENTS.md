@@ -14,13 +14,13 @@
 
 ### Calculator
 
-- [ ] **CALC-01**: User can select an exercise and enter a percentage to see the calculated working weight
-- [ ] **CALC-02**: User can tap preset percentage buttons (70%, 80%, 85%, 90%, 95%) instead of typing
+- [x] **CALC-01**: User can select an exercise and enter a percentage to see the calculated working weight
+- [x] **CALC-02**: User can tap preset percentage buttons (70%, 80%, 85%, 90%, 95%) instead of typing
 - [x] **CALC-03**: Calculated weights are rounded to the nearest 2.5kg
 
 ### Mobile UX
 
-- [ ] **UX-01**: Primary actions are in the thumb zone (bottom of screen), usable one-handed
+- [x] **UX-01**: Primary actions are in the thumb zone (bottom of screen), usable one-handed
 - [x] **UX-02**: All data persists in browser localStorage across sessions
 
 ### Foundation
@@ -71,10 +71,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EXER-02 | Phase 2 | Complete |
 | EXER-03 | Phase 2 | Complete |
 | EXER-04 | Phase 2 | Complete |
-| CALC-01 | Phase 3 | Pending |
-| CALC-02 | Phase 3 | Pending |
+| CALC-01 | Phase 3 | Complete |
+| CALC-02 | Phase 3 | Complete |
 | CALC-03 | Phase 3 | Complete |
-| UX-01 | Phase 3 | Pending |
+| UX-01 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 11 total

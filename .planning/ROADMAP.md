@@ -61,7 +61,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 03-01-PLAN.md — Pure calcWorkingWeight function (src/lib/calculator.ts) + ExerciseList navigation prop
-- [ ] 03-02-PLAN.md — CalculatorView component + App.tsx view-switcher wiring
+- [x] 03-02-PLAN.md — CalculatorView component + App.tsx view-switcher wiring
 **UI hint**: yes
 
 ## Progress
