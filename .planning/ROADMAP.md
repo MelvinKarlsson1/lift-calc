@@ -58,7 +58,10 @@ Plans:
   2. User can tap a preset percentage button (70%, 80%, 85%, 90%, 95%) and see the result without typing
   3. Calculated weight is displayed rounded to the nearest 2.5 kg (no raw floating point output)
   4. Primary controls and result display are reachable with one thumb at the bottom of the screen
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — Pure calcWorkingWeight function (src/lib/calculator.ts) + ExerciseList navigation prop
+- [ ] 03-02-PLAN.md — CalculatorView component + App.tsx view-switcher wiring
 **UI hint**: yes
 
 ## Progress
@@ -70,4 +73,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete   | 2026-03-25 |
 | 2. Exercise Management | 2/2 | Complete   | 2026-03-25 |
-| 3. Calculator | 0/? | Not started | - |
+| 3. Calculator | 0/2 | Not started | - |
