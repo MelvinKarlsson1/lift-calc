@@ -12,7 +12,7 @@ Three phases that build from the ground up: a safe storage layer first (so data 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Scaffold, storage layer, and iOS layout fixes
+- [x] **Phase 1: Foundation** - Scaffold, storage layer, and iOS layout fixes (completed 2026-03-25)
 - [ ] **Phase 2: Exercise Management** - Exercise list, 1RM entry, and custom exercises
 - [ ] **Phase 3: Calculator** - Working weight calculation and thumb-zone session view
 
@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Vite + React + TypeScript + Tailwind v4, apply dvh viewport fix
-- [ ] 01-02-PLAN.md — Storage layer (storage.ts, types.ts, store.ts) and App shell with storage gate
+- [x] 01-02-PLAN.md — Storage layer (storage.ts, types.ts, store.ts) and App shell with storage gate
 **UI hint**: yes
 
 ### Phase 2: Exercise Management
@@ -65,6 +65,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/2 | In Progress|  |
+| 1. Foundation | 2/2 | Complete   | 2026-03-25 |
 | 2. Exercise Management | 0/? | Not started | - |
 | 3. Calculator | 0/? | Not started | - |

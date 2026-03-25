@@ -21,12 +21,12 @@
 ### Mobile UX
 
 - [ ] **UX-01**: Primary actions are in the thumb zone (bottom of screen), usable one-handed
-- [ ] **UX-02**: All data persists in browser localStorage across sessions
+- [x] **UX-02**: All data persists in browser localStorage across sessions
 
 ### Foundation
 
-- [ ] **FOUND-01**: App uses safe localStorage abstraction with error handling (Safari private browsing)
-- [ ] **FOUND-02**: Storage schema is versioned from day one for future migrations
+- [x] **FOUND-01**: App uses safe localStorage abstraction with error handling (Safari private browsing)
+- [x] **FOUND-02**: Storage schema is versioned from day one for future migrations
 
 ## v2 Requirements
 
@@ -64,9 +64,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
-| UX-02 | Phase 1 | Pending |
+| FOUND-01 | Phase 1 | Complete |
+| FOUND-02 | Phase 1 | Complete |
+| UX-02 | Phase 1 | Complete |
 | EXER-01 | Phase 2 | Pending |
 | EXER-02 | Phase 2 | Pending |
 | EXER-03 | Phase 2 | Pending |

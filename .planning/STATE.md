@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to execute
-stopped_at: Completed 01-foundation-01-01-PLAN.md
-last_updated: "2026-03-25T13:01:18.335Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 01-foundation-01-02-PLAN.md
+last_updated: "2026-03-25T13:06:16.216Z"
 progress:
   total_phases: 3
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 2
-  completed_plans: 1
+  completed_plans: 2
 ---
 
 # Project State
@@ -47,6 +47,7 @@ Plan: 2 of 2
 
 *Updated after each plan completion*
 | Phase 01-foundation P01 | 4 | 1 tasks | 17 files |
+| Phase 01-foundation P02 | 5 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -62,6 +63,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: Tailwind v4 @tailwindcss/vite plugin chosen — eliminates PostCSS config, faster HMR
 - [Phase 01-foundation]: dvh viewport fix applied at scaffold time — cheap now, expensive to retrofit later
 - [Phase 01-foundation]: schemaVersion:1 in Zustand initial state from first commit — prevents silent data corruption on migrations
+- [Phase 01-foundation]: AppStore exported from types.ts alongside AppState — type contract in one file, store.ts imports it
+- [Phase 01-foundation]: Named constant CURRENT_SCHEMA_VERSION in initial state — auditable, grep-friendly over magic literal
 
 ### Pending Todos
 
@@ -75,6 +78,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-25T13:01:18.333Z
-Stopped at: Completed 01-foundation-01-01-PLAN.md
+Last session: 2026-03-25T13:06:16.214Z
+Stopped at: Completed 01-foundation-01-02-PLAN.md
 Resume file: None
