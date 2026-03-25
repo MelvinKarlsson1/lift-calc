@@ -15,13 +15,13 @@ Instantly see how much weight to load for any exercise at any percentage of your
 - ✓ Data persists in browser local storage — Validated in Phase 1: Foundation
 - ✓ Safe localStorage with error handling (Safari private browsing) — Validated in Phase 1: Foundation
 - ✓ Versioned storage schema for future migrations — Validated in Phase 1: Foundation
+- ✓ Browse a comprehensive list of weightlifting exercises — Validated in Phase 2: Exercise Management
+- ✓ Remove default exercises you don't use — Validated in Phase 2: Exercise Management
+- ✓ Add custom exercises — Validated in Phase 2: Exercise Management
+- ✓ Record your 1RM for each exercise — Validated in Phase 2: Exercise Management
 
 ### Active
 
-- [ ] Browse and search a comprehensive list of weightlifting exercises
-- [ ] Remove default exercises you don't use
-- [ ] Add custom exercises
-- [ ] Record your 1RM (one-rep max) for each exercise
 - [ ] Select exercises for a workout session
 - [ ] Set a percentage of max for each selected exercise
 - [ ] See the calculated working weight displayed clearly
@@ -76,4 +76,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-25 after Phase 1 completion*
+*Last updated: 2026-03-25 after Phase 2 completion*
