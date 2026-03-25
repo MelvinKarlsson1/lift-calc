@@ -1,6 +1,12 @@
 import { useState } from 'react'
 import { isStorageAvailable } from './lib/storage'
 import { ExerciseList } from './components/ExerciseList'
+import { CalculatorView } from './components/CalculatorView'
+
+// Two-screen navigation via useState — no React Router.
+// Per CLAUDE.md STACK: "React useState for current view"
+// Per research: app has exactly two screens; router adds overhead with no benefit.
+type View = 'list' | 'calculator'
 
 function StorageWarning() {
   return (
@@ -18,10 +24,31 @@ function StorageWarning() {
 
 export default function App() {
   const [storageAvailable] = useState(() => isStorageAvailable())
+  const [view, setView] = useState<View>('list')
+  const [selectedExerciseId, setSelectedExerciseId] = useState<string | null>(null)
 
   if (!storageAvailable) {
     return <StorageWarning />
   }
 
-  return <ExerciseList />
+  if (view === 'calculator' && selectedExerciseId) {
+    return (
+      <CalculatorView
+        exerciseId={selectedExerciseId}
+        onBack={() => {
+          setView('list')
+          setSelectedExerciseId(null)
+        }}
+      />
+    )
+  }
+
+  return (
+    <ExerciseList
+      onSelectExercise={(id) => {
+        setSelectedExerciseId(id)
+        setView('calculator')
+      }}
+    />
+  )
 }
