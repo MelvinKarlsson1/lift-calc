@@ -12,7 +12,9 @@ Instantly see how much weight to load for any exercise at any percentage of your
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Data persists in browser local storage — Validated in Phase 1: Foundation
+- ✓ Safe localStorage with error handling (Safari private browsing) — Validated in Phase 1: Foundation
+- ✓ Versioned storage schema for future migrations — Validated in Phase 1: Foundation
 
 ### Active
 
@@ -23,7 +25,6 @@ Instantly see how much weight to load for any exercise at any percentage of your
 - [ ] Select exercises for a workout session
 - [ ] Set a percentage of max for each selected exercise
 - [ ] See the calculated working weight displayed clearly
-- [ ] Data persists in browser local storage
 - [ ] Mobile-friendly UI that works well on phone screens at the gym
 
 ### Out of Scope
@@ -75,4 +76,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-25 after initialization*
+*Last updated: 2026-03-25 after Phase 1 completion*
