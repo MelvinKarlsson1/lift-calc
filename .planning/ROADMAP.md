@@ -45,7 +45,7 @@ Plans:
   4. User can enter or update their 1RM for any exercise using a numeric keyboard
 **Plans**: 2 plans
 Plans:
-- [ ] 02-01-PLAN.md — Store additions: removeExercise action, seedExercises.ts, seed-on-first-launch in persist merge
+- [x] 02-01-PLAN.md — Store additions: removeExercise action, seedExercises.ts, seed-on-first-launch in persist merge
 - [ ] 02-02-PLAN.md — ExerciseList component with ExerciseRow, add/remove/1RM UI, wire into App.tsx
 **UI hint**: yes
 
@@ -69,5 +69,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete   | 2026-03-25 |
-| 2. Exercise Management | 0/2 | Not started | - |
+| 2. Exercise Management | 1/2 | In Progress|  |
 | 3. Calculator | 0/? | Not started | - |

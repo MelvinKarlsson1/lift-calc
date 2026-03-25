@@ -7,8 +7,8 @@
 
 ### Exercise Management
 
-- [ ] **EXER-01**: User sees a preloaded list of ~50 common weightlifting exercises on first launch
-- [ ] **EXER-02**: User can remove default exercises they don't use
+- [x] **EXER-01**: User sees a preloaded list of ~50 common weightlifting exercises on first launch
+- [x] **EXER-02**: User can remove default exercises they don't use
 - [ ] **EXER-03**: User can add custom exercises with a name
 - [ ] **EXER-04**: User can record their 1RM (max weight in kg) for any exercise
 
@@ -67,8 +67,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-01 | Phase 1 | Complete |
 | FOUND-02 | Phase 1 | Complete |
 | UX-02 | Phase 1 | Complete |
-| EXER-01 | Phase 2 | Pending |
-| EXER-02 | Phase 2 | Pending |
+| EXER-01 | Phase 2 | Complete |
+| EXER-02 | Phase 2 | Complete |
 | EXER-03 | Phase 2 | Pending |
 | EXER-04 | Phase 2 | Pending |
 | CALC-01 | Phase 3 | Pending |

@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Completed 01-foundation-01-02-PLAN.md
-last_updated: "2026-03-25T13:10:36.592Z"
+status: Ready to execute
+stopped_at: Completed 02-exercise-management-02-01-PLAN.md
+last_updated: "2026-03-25T13:34:00.583Z"
 progress:
   total_phases: 3
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 4
+  completed_plans: 3
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-25)
 
 **Core value:** Instantly see how much weight to load for any exercise at any percentage of your max.
-**Current focus:** Phase 01 — foundation
+**Current focus:** Phase 02 — exercise-management
 
 ## Current Position
 
-Phase: 2
-Plan: Not started
+Phase: 02 (exercise-management) — EXECUTING
+Plan: 2 of 2
 
 ## Performance Metrics
 
@@ -48,6 +48,7 @@ Plan: Not started
 *Updated after each plan completion*
 | Phase 01-foundation P01 | 4 | 1 tasks | 17 files |
 | Phase 01-foundation P02 | 5 | 2 tasks | 3 files |
+| Phase 02-exercise-management P01 | 149 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -65,6 +66,7 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: schemaVersion:1 in Zustand initial state from first commit — prevents silent data corruption on migrations
 - [Phase 01-foundation]: AppStore exported from types.ts alongside AppState — type contract in one file, store.ts imports it
 - [Phase 01-foundation]: Named constant CURRENT_SCHEMA_VERSION in initial state — auditable, grep-friendly over magic literal
+- [Phase 02-exercise-management]: Seed guard placed in persist merge callback so it fires exactly once at hydration; 44 exercises chosen over padding to hit ~50
 
 ### Pending Todos
 
@@ -78,6 +80,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-25T13:06:16.214Z
-Stopped at: Completed 01-foundation-01-02-PLAN.md
+Last session: 2026-03-25T13:34:00.579Z
+Stopped at: Completed 02-exercise-management-02-01-PLAN.md
 Resume file: None
