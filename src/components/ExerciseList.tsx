@@ -15,9 +15,10 @@ interface ExerciseRowProps {
   weight: number | null
   onRemove: () => void
   onWeightChange: (weight: number) => void
+  onSelect?: () => void  // optional navigation callback
 }
 
-function ExerciseRow({ exercise, weight, onRemove, onWeightChange }: ExerciseRowProps) {
+function ExerciseRow({ exercise, weight, onRemove, onWeightChange, onSelect }: ExerciseRowProps) {
   const [localWeight, setLocalWeight] = useState(weight != null ? String(weight) : '')
 
   function handleBlur() {
@@ -29,7 +30,17 @@ function ExerciseRow({ exercise, weight, onRemove, onWeightChange }: ExerciseRow
 
   return (
     <div className="flex items-center gap-3 bg-gray-900 rounded-lg px-4 py-3 min-h-[56px]">
-      <span className="flex-1 text-white text-base">{exercise.name}</span>
+      <button
+        onClick={() => onSelect?.()}
+        className="flex-1 text-left text-white text-base py-1 disabled:cursor-default"
+        aria-label={`Calculate working weight for ${exercise.name}`}
+        disabled={!weight}
+      >
+        <span>{exercise.name}</span>
+        {weight != null && (
+          <span className="ml-2 text-gray-400 text-sm" aria-hidden="true">&rarr;</span>
+        )}
+      </button>
       <input
         type="text"
         inputMode="decimal"
@@ -56,7 +67,11 @@ function ExerciseRow({ exercise, weight, onRemove, onWeightChange }: ExerciseRow
 // ExerciseList — exported component
 // ---------------------------------------------------------------------------
 
-export function ExerciseList() {
+interface ExerciseListProps {
+  onSelectExercise: (exerciseId: string) => void
+}
+
+export function ExerciseList({ onSelectExercise }: ExerciseListProps) {
   const exercises = useAppStore((s) => s.exercises)
   const addExercise = useAppStore((s) => s.addExercise)
   const removeExercise = useAppStore((s) => s.removeExercise)
@@ -91,6 +106,7 @@ export function ExerciseList() {
               weight={maxWeights[ex.id] ?? null}
               onRemove={() => removeExercise(ex.id)}
               onWeightChange={(w) => setMaxWeight(ex.id, w)}
+              onSelect={() => onSelectExercise(ex.id)}
             />
           ))
         )}
